@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="view/style_01.css"> 
 	</head>
 
-	<body>
+	<body id="body">
 		<!-- Login -->
 		<div id="login">
 			<button id="login-button" onclick="login()"> <b> LOGIN </b> </button>
@@ -15,11 +15,11 @@
 		<div id="fixedmenu">
 			<table id="tablemenu">
 				<tr>
-					<th> <a href="#section01"> HOME </a> </th>
-					<th> <a href="#section02_1"> THEME </a> </th>
-					<th> <a href="#section03"> TOP CHOICES </a> </th>
-					<th> <a href="#section04"> TRIPS </a> </th>
-					<th> <a href="#section05"> ABOUT US </a> </th>
+					<th> <a href="#section01" onclick="switchbg(0)"> HOME </a> </th>
+					<th> <a href="#section02_1" onclick="switchbg(0)"> THEME </a> </th>
+					<th> <a href="#section03" onclick="switchbg(0)"> TOP CHOICES </a> </th>
+					<th> <a href="#content04" onclick="switchbg(0)"> TRIPS </a> </th>
+					<th> <a href="#section05" onclick="switchbg(0)"> ABOUT US </a> </th>
 				</tr>
 			</table> 
 		</div>
@@ -40,7 +40,7 @@
 				<!-- Content -->
 				<span id="content02">
 					<h2> Chill & Relax </h2>
-					<a href="#section04"> <img src="img/theme01.png" style="height: 200px"> </a>
+					<a href="#content04" onclick="switchbg(1)"> <img src="img/theme01.png" style="height: 200px"> </a>
 					<ul>
 						<li> Phuket </li>  
 						<li> Bali </li>
@@ -52,7 +52,7 @@
 				<!-- Content -->
 				<span id="content02">
 					<h2> Shopaholic </h2>
-					<a href="#jump02"> <img src="img/theme02.jpg" style="height: 200px"> </a>
+					<a href="#jump02" onclick="switchbg(2)"> <img src="img/theme02.jpg" style="height: 200px"> </a>
 					<ul>
 						<li> Hong Kong </li>  
 						<li> Paris </li>
@@ -64,7 +64,7 @@
 				<!-- Content -->
 				<span id="content02">
 					<h2> Foodies </h2>
-					<a href="#jump03"> <img src="img/theme03.jpg" style="height: 200px"> </a>
+					<a href="#jump03" onclick="switchbg(3)"> <img src="img/theme03.jpg" style="height: 200px"> </a>
 					<ul>
 						<li> Taipei </li>  
 						<li> Osaka </li>
@@ -76,7 +76,7 @@
 				<!-- Content -->
 				<span id="content02">
 					<h2> Adventurous </h2>
-					<a href="#jump04"> <img src="img/theme04.jpg" style="height: 200px"> </a>
+					<a href="#jump04" onclick="switchbg(4)"> <img src="img/theme04.jpg" style="height: 200px"> </a>
 					<ul>
 						<li> Dubai </li>  
 						<li> Nepal </li>
@@ -88,7 +88,7 @@
 				<!-- Content -->
 				<span id="content02">
 					<h2> Heritage </h2>
-					<a href="#jump05"> <img src="img/theme05.jpg" style="height: 200px"> </a>
+					<a href="#jump05" onclick="switchbg(5)"> <img src="img/theme05.jpg" style="height: 200px"> </a>
 					<ul>
 						<li> Beijing </li>  
 						<li> Istanbul </li>
@@ -100,7 +100,7 @@
 				<!-- Content -->
 				<span id="content02">
 					<h2> Nature </h2>
-					<a href="#jump06"> <img src="img/theme06.jpg" style="height: 200px"> </a>
+					<a href="#jump06" onclick="switchbg(6)"> <img src="img/theme06.jpg" style="height: 200px"> </a>
 					<ul>
 						<li> Chamonix </li>  
 						<li> Yosemite </li>
@@ -136,109 +136,112 @@
 		</div>
 
 		<!-- Section 04 -->
-		<div class="description" id="section04">
-			<br/><br/><br/><br/>
-			<!-- Theme 01 -->
-			<div class="content" id="theme01">
-				<h1> [Chill & Relax] </h1>
-				<h2> Phuket 3D2N (weekend getaway) </h2>
-				<p> Phuket is known for its enchanting beaches and exciting nightlife.<br/>
-				It is a superb weekend getaway destination.<br/>
-				Get ready to indulge yourself in the wildest nightlife and most beautiful beaches! <br/> </p> 
-				<br/>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31616.89514240727!2d98.37440391875502!3d7.8833605365077934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305031fd2d6380a3%3A0x8df88000bd82f66b!2sPhuket%2C+Mueang+Phuket+District%2C+Province+de+Phuket+83000%2C+Tha%C3%AFlande!5e0!3m2!1sfr!2sfr!4v1497949581682" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<br/><br/>
-				
-				<ul> <h3> Day 1 </h3> 
-					<li> Flight from Singapore to Phuket </li>  
-					<li> 5 Star Resort check in </li>
-					<li> Chill and relax in the resort, free and easy </li>  
-					<li> Night SPA/massage </li>
-				</ul> 
- 				 
-				<ul> <h3> Day 2 </h3> 
-					<li> Cruise to Phi Phi Island </li> 
-					<li> Dinner: Seafood gourmet at Phi Phi Island <br/>
-					(<a href="http://www.phiphi.phuket.com/restaurants/recommended-restaurants.htm"><i>Recommended Restaurants</i></a>) </li>  
-					<li> Watch traditional Thai performances </li> 
-					<li> Back to resort </li> 
-				</ul>
-				
-				<ul> <h3> Day 3 </h3> 
-					<li> Free and easy </li>  
-					<li> Home sweet home </li> 
-				</ul>
-				<br/>
+		<div id="section04">
+			<div class="description" id="content04">
+				<br/><br/><br/><br/>
+				<!-- Theme 01 -->
+				<div class="content" id="theme01">
+					<h1> [Chill & Relax] </h1>
+					<h2> Phuket 3D2N (weekend getaway) </h2>
+					<p> Phuket is known for its enchanting beaches and exciting nightlife.<br/>
+					It is a superb weekend getaway destination.<br/>
+					Get ready to indulge yourself in the wildest nightlife and most beautiful beaches! <br/> </p> 
+					<br/>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31616.89514240727!2d98.37440391875502!3d7.8833605365077934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305031fd2d6380a3%3A0x8df88000bd82f66b!2sPhuket%2C+Mueang+Phuket+District%2C+Province+de+Phuket+83000%2C+Tha%C3%AFlande!5e0!3m2!1sfr!2sfr!4v1497949581682" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<br/><br/>
+					
+					<ul> <h3> Day 1 </h3> 
+						<li> Flight from Singapore to Phuket </li>  
+						<li> 5 Star Resort check in </li>
+						<li> Chill and relax in the resort, free and easy </li>  
+						<li> Night SPA/massage </li>
+					</ul> 
+	 				 
+					<ul> <h3> Day 2 </h3> 
+						<li> Cruise to Phi Phi Island </li> 
+						<li> Dinner: Seafood gourmet at Phi Phi Island <br/>
+						(<a href="http://www.phiphi.phuket.com/restaurants/recommended-restaurants.htm"><i>Recommended Restaurants</i></a>) </li>  
+						<li> Watch traditional Thai performances </li> 
+						<li> Back to resort </li> 
+					</ul>
+					
+					<ul> <h3> Day 3 </h3> 
+						<li> Free and easy </li>  
+						<li> Home sweet home </li> 
+					</ul>
+					<br/>
 
-				<h2> Bali 3D2N </h2> 
-				<br/>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010294.3594462489!2d114.51102038494352!3d-8.454338468345469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sfr!2sfr!4v1497950261617" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<br/><br/>
-				
-				<p> 
-					Bali is a paradise, period.<br/>
-					Lose yourself in the charming beaches and the chaos of Kuta! 
-				</p>
+					<h2> Bali 3D2N </h2> 
+					<br/>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010294.3594462489!2d114.51102038494352!3d-8.454338468345469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sfr!2sfr!4v1497950261617" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<br/><br/>
+					
+					<p> 
+						Bali is a paradise, period.<br/>
+						Lose yourself in the charming beaches and the chaos of Kuta! 
+					</p>
 
-				<ul> <h3> Day 1 </h3> 
-					<li> Flight from Singapore to Denpasar Airport (Bali) </li>  
-					<li> 5 Star Resort (Finns Resort) check in </li>
-					<li> Water activities indulgence </li>  
-					<li> Night SPA </li>
-				</ul> 
- 				 
-				<ul> <h3> Day 2 </h3> 
-					<li> Roadtrip to Agung Mountain </li> 
-					<li> Lunch : Buffet at the mountain restaurant with scenic view </li>  
-					<li> Traditional Baliness Gamelan music performance </li> 
-				</ul>
-				
-				<ul> <h3> Day 3 </h3> 
-					<li> Free and easy </li>  
-					<li> Home sweet home </li> 
-				</ul>
-				<br/>
-			</div>	
+					<ul> <h3> Day 1 </h3> 
+						<li> Flight from Singapore to Denpasar Airport (Bali) </li>  
+						<li> 5 Star Resort (Finns Resort) check in </li>
+						<li> Water activities indulgence </li>  
+						<li> Night SPA </li>
+					</ul> 
+	 				 
+					<ul> <h3> Day 2 </h3> 
+						<li> Roadtrip to Agung Mountain </li> 
+						<li> Lunch : Buffet at the mountain restaurant with scenic view </li>  
+						<li> Traditional Baliness Gamelan music performance </li> 
+					</ul>
+					
+					<ul> <h3> Day 3 </h3> 
+						<li> Free and easy </li>  
+						<li> Home sweet home </li> 
+					</ul>
+					<br/>
+				</div>	
 
-			<a id="jump02" href="#section04"> (Back to top) </a>
-			<br/><br/><br/>
+				<a id="jump02" href="#content04"> (Back to top) </a>
+				<br/><br/><br/>
 
-			<div class="content" id="theme02">
-				<h1> [Shopaholic] </h1>
-				<h2> Hong Kong 3D2N (weekend getaway) </h2>
-				<p> Hong Kong, where east meets the west, a buzzling city with legendary kitchen,<br/>
-				astonishing city skyline and dramatic panoramic harbour night view.<br/>
-				What's more! It is the paradise for shopaholics! <br/> </p> 
-				<br/>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472304.9355449225!2d113.84080986493173!3d22.358072307808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2sHong+Kong!5e0!3m2!1sfr!2sfr!4v1497955613337" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<br/><br/>
-				
-				<ul> <h3> Day 1 </h3> 
-					<li> Flight from Hong Kong to Singapore </li>  
-					<li> Hotel check in </li>
-					<li> 
-						Temple street, get a good bargain at the cultural riched traditional Chinese night market<br/> 
-						and watch a Cantonese opera performance while chilling at the street stalls. </li>
-				</ul> 
- 				 
-				<ul> <h3> Day 2 </h3> 
-					<li> Shopping </li> 
-					<li> Temple street </li>  
-					<li> Lady's street </li> 
-					<li> Lan Kwai Fong </li> 
-				</ul>
-				
-				<ul> <h3> Day 3 </h3> 
-					<li> Central </li>  
-					<li> TaiPingSan </li> 
-				</ul>
-				<br/>
-			</div>	
+				<div class="content" id="theme02">
+					<h1> [Shopaholic] </h1>
+					<h2> Hong Kong 3D2N (weekend getaway) </h2>
+					<p> Hong Kong, where east meets the west, a buzzling city with legendary kitchen,<br/>
+					astonishing city skyline and dramatic panoramic harbour night view.<br/>
+					What's more! It is the paradise for shopaholics! <br/> </p> 
+					<br/>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472304.9355449225!2d113.84080986493173!3d22.358072307808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2sHong+Kong!5e0!3m2!1sfr!2sfr!4v1497955613337" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<br/><br/>
+					
+					<ul> <h3> Day 1 </h3> 
+						<li> Flight from Hong Kong to Singapore </li>  
+						<li> Hotel check in </li>
+						<li> 
+							Temple street, get a good bargain at the cultural riched traditional Chinese night market<br/> 
+							and watch a Cantonese opera performance while chilling at the street stalls. 
+						</li>
+					</ul> 
+	 				 
+					<ul> <h3> Day 2 </h3> 
+						<li> Shopping at  Central and Causeway Bay </li> 
+						<li> Lunch at Causeway Bay Tsui Wah </li>  
+						<li> Shopping at Lady's Street </li> 
+						<li> Dinner and drink at Lan Kwai Fong </li> 
+					</ul>
+					
+					<ul> <h3> Day 3 </h3> 
+						<li> Free and easy </li>  
+						<li> Home sweet home </li> 
+					</ul>
+					<br/>
+				</div>	
 
-			<a id="jump03" href="#section04"> (Back to top) </a>
-			<br/><br/><br/>
+				<a id="jump03" href="#content04"> (Back to top) </a>
+				<br/><br/><br/>
 
 
+			</div>
 		</div>
 
 		<!-- Section 05 -->
