@@ -1,0 +1,269 @@
+/* Overall body */
+html {
+      scroll-behavior: smooth;
+}
+
+body{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-shadow: 1px 1px black;
+	text-align:center;
+	background-image: url("../img/bg01.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 200%;
+}
+
+/* Login */
+#login {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	z-index: 30;
+}
+
+#login-button {
+	position: fixed;
+	background-color: #3b5998;
+	border: 1px solid white;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 80px;
+}
+
+#login-button:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+/* Fixed menu */
+#fixedmenu{
+	text-shadow: none;
+	position: fixed;
+	/*background: rgba(50, 120, 200, .75); */
+	background: rgba(51,51,51,0.7);
+	float: clear;
+	margin: 0 auto; top:0px; left:0px; right:0px;
+	z-index: 20;
+}
+
+#tablemenu{
+	width: auto;
+    float: right;
+    margin: 0px 20px 0px 0px;
+}
+
+th{
+	float: left;
+	padding: 25px 25px 25px 25px;
+}
+
+th:hover{
+	background-color: rgba(50, 120, 200, .75);
+}
+
+/* Section 01 */
+
+#section01 {
+	color: white;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 76px;
+    left: 0;
+    background: rgba(51,51,51,0.7);
+    z-index: 10;
+}
+
+#content01{
+  	position: relative;
+    top: 15%;
+    font-size: 200%;
+}
+
+.bold{
+	font-size: 150%;
+}
+
+/* Section 02 */
+
+#section02_1 {
+	color: white;
+	position: absolute;
+    width: 33.33%;
+    height: 50%;
+    top: 709px;
+    left: 0;
+    background: rgba(11, 11, 11, .8);
+    z-index: 10;
+}
+
+#section02_2 {
+	color: white;
+	position: absolute;
+    width: 33.33%;
+    height: 50%;
+    top: 709px;
+    left: 33.33%;
+    background: rgba(31,31,31,0.8);
+    z-index: 10;
+}
+
+#section02_3 {
+	color: white;
+	position: absolute;
+    width: 33.33%;
+    height: 50%;
+    top: 709px;
+    left: 66.66%;
+    background: rgba(11, 11, 11, .8);
+    z-index: 10;
+}
+
+#section02_4 {
+	color: white;
+	position: absolute;
+    width: 33.33%;
+    height: 50%;
+    top: 1026px;
+    left: 0;
+    background: rgba(31,31,31,.8);
+    z-index: 10;
+}
+
+#section02_5 {
+	color: white;
+	position: absolute;
+    width: 33.33%;
+    height: 50%;
+    top: 1026px;
+    left: 33.33%;
+    background: rgba(11, 11, 11, .8);
+    z-index: 10;
+}
+
+#section02_6 {
+	color: white;
+	position: absolute;
+    width: 33.33%;
+    height: 50%;
+    top: 1026px;
+    left: 66.66%;
+    background: rgba(31,31,31,0.8);
+    z-index: 10;
+}
+
+#content02 ul li{
+	float: left;
+	margin: 0px 20px 0px 60px;
+	padding: 0px 20px 0px 20px;
+}
+
+/* Section 03 */
+
+#section03 {
+	color: white;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 1343px;
+    left: 0;
+    background: rgba(50, 120, 200, .6);
+    z-index: 10;
+}
+
+#content03 {
+	position: absolute;
+	top: 15%;
+	left: 3%;
+}
+
+.mySlides {
+	border-radius: 20px;
+	position:relative;
+	-webkit-box-shadow:0 3px 12px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 3px 12px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 3px 12px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	/*margin: auto;*/
+}
+
+.description{
+	color: black;
+    background: rgba(220, 220, 220, .95);
+    z-index: 30;
+    padding: 20px 20px 20px 20px;
+}
+
+.description p{
+	text-shadow: none;
+}
+
+#desc03{
+	position: relative;
+    width: 50%;
+    height: 70%;
+    top: 22%;
+    left: 47%;
+}
+
+#desc03 p{
+	font-size: 120%;
+	line-height: 30px;
+	top: 20px;
+}
+
+/* Section 04 */
+#section04{
+	position: absolute;
+    width: 100%;
+    height: auto;
+    top: 1976px;
+    left: 0;
+    z-index: 10;
+}
+
+#section04 p{
+	line-height: 20px;
+	top: 20px;
+}
+
+.content p, li{
+	font-size: 120%;
+	text-shadow: none;
+	font-family: Century Gothic, sans-serif;
+}
+
+#jump02, #jump03 {
+	text-align: left;
+	left: 30px;
+	text-shadow: none;
+}
+
+/* Section 05 */
+#section05{
+	position: absolute;
+    width: 100%;
+    height: auto;
+    top: 5500px;
+    left: 0;
+    background: rgba(50, 120, 200, .6);
+    z-index: 10;
+}
+
+#section05 p{
+	font-size: 120%;
+}
+
+#desc05 {
+	margin: 100px 50px 60px 50px;
+}
