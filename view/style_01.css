@@ -235,7 +235,7 @@ th:hover{
 }
 
 #content04{
-	margin: 0px 150px 0px 150px;
+	margin: 0px 250px 0px 250px;
 }
 
 #content04 p{
@@ -260,7 +260,7 @@ th:hover{
 	position: absolute;
     width: 100%;
     height: auto;
-    top: 5367px;
+    top: 15379px;
     left: 0;
     background: rgba(50, 120, 200, .6);
     z-index: 10;
